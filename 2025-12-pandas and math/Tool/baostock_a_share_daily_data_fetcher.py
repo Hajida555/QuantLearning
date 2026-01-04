@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import baostock as bs
 #固定保存路径并自动创建文件夹
-A_share_Raw_Data = "D:/quant-learning/quant-learning-git/raw_data/A_share_Raw_Data"
+A_share_Raw_Data = "D:\\quant-learning\\quant-learning-git\\2025-12-pandas and math\\Individual Stock Quote Data Cleaning Project\\Raw_data\\A_share_Raw_Data"
 save_root = A_share_Raw_Data #可改文件名
 os.makedirs(save_root, exist_ok=True)#创建文件夹
 #选择三只股票和时间
