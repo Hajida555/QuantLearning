@@ -319,3 +319,23 @@
   - 行空间正交零空间 列空间正交转置零空间
   - 无论在R^n R^m中都有正交补
   - Ax=b A^t A x=A^t b 中的x是最优解 N(A^tA)=N(A)
+## 1-9
+1. py实践
+  - pd.merge（合并的df，on=通过哪列合成,how=保留哪一边的行） 
+  - sqlite3.connect 链接数据库和python .cursor 获取数据库游标对象
+  - CREATE TABLE IF NOT EXISTS 数据库表 创建数据库表 如果存在就跳过（
+  - PRIMARY KEY 设为主键即无重复值 INTEGER 整数类型 取值范围小AUTO_INCREMENT 自动从一往后排不重复
+  - VARCHAR(20) NOT NULL 20个字符串类型 不有非空
+  - FLOAT浮点数值 BIGINT 大整数 UNIQUE（列名）不重复
+  - cursor.execute(指令) 提交指令并执行 conn.commit() 永久保存到数据库中
+  -INSERT …… INTO 插入数据字段即列名 OR REPLACE 对INSERT优化补充 如果插入数据不符合主键时 抛出数据重复  VALUES 具体值
+  - format() 填充可变变量 .values提取纯数据剔除索引 转化为np的二维数据 .tolist() 转化为python列表
+  - .executemany(模板，数据 .fetchone 返回查询的第一条数据
+  - tushare没有积分 更换baostock
+2. mit
+  - 向量b投影e=b-p 垂直点p=xa 于向量a
+  - 求上述的x 因为垂直 x^T y = a^T (b-xa) = 0 化解得 x=a^Tb/a^Ta=P=投影矩阵 矩阵的r取决a有多少r 并且只有当向量b改变时跟随改变 a改变不变 
+  - 带入原公式 得 p=xa=Pb=p^T=p^2
+  - 对于无解的Ax=b将b变成最接近列空间的的那一个即投影向量 求在Ax^=p的最优解x^
+  - 同样的A^T(b-Ax)=0 解投影矩阵P=A (A^T A)^-1 A^T 
+  - (b-Ax)=e e在零空间中 又根据之前所学 可得e垂直A的列空间
