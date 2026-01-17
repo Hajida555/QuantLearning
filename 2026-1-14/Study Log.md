@@ -46,3 +46,10 @@
  - .pop删除数据列 reset_index()将行标签转化为列 df.piovt(index=列标签,columns=从表格中选择行标签,values=值)
  - melt宽表格转化为长表格 id_vars指定保留标签 value_vars需要拆分标签
  - plt.plot（df）绘制折线图
+## 1-17
+1. 宋浩概率论 
+ - 对总事件划分Ai……An求在总事件中B发生的概率=P(A1)P(B|A1)……P(An)P(B|An)
+ - 全概率是在发生的全概率上求某一个原因发生的概率 即由结果推原因
+ - 事件独立 无交集P(AB)=P(A)P(B)
+2. 《利用python数据分析》
+ - .figure绘画布 add_subplot()在此基础上创建子图
